@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Boutique</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Marketplace</h1>
+      <div class="nav-links">
+        <a href="../index.html">Accueil</a>
+        <a href="boutique.html">Ma Boutique</a>
+        <a href="panier.html">Panier</a>
+        <a href="profil.html">Profil</a>
+        <button id="logout-btn" style="display: none;">Déconnexion</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="shop-setup" style="display: none;">
+      <h2>Créer votre boutique</h2>
+      <form id="shop-form">
+        <input type="text" id="shop-name" placeholder="Nom de la boutique" required>
+        <select id="template-select" required>
+          <option value="">Choisir un template</option>
+          <option value="template1">Template 1 (Moderne)</option>
+          <option value="template2">Template 2 (Minimaliste)</option>
+          <option value="template3">Template 3 (Coloré)</option>
+        </select>
+        <button type="submit">Créer la boutique</button>
+      </form>
+    </section>
+    <section id="shop-content">
+      <h2 id="shop-title"></h2>
+      <button id="add-product-btn">Ajouter un produit</button>
+      <form id="product-form" style="display: none;">
+        <input type="text" id="product-name" placeholder="Nom du produit" required>
+        <input type="number" id="product-price" placeholder="Prix" required>
+        <textarea id="product-description" placeholder="Description" required></textarea>
+        <select id="product-category" required>
+          <option value="electronics">Électronique</option>
+          <option value="clothing">Vêtements</option>
+          <option value="home">Maison</option>
+        </select>
+        <input type="file" id="product-image" accept="image/*" required>
+        <button type="submit">Ajouter</button>
+      </form>
+      <div id="shop-products" class="product-grid"></div>
+    </section>
+  </main>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
