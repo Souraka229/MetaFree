@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Marketplace</h1>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="pages/boutique.html">Ma Boutique</a>
+        <a href="pages/panier.html">Panier</a>
+        <a href="pages/profil.html">Profil</a>
+        <button id="logout-btn" style="display: none;">Déconnexion</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="search-filter">
+      <input type="text" id="search-bar" placeholder="Rechercher un produit...">
+      <select id="category-filter">
+        <option value="">Toutes les catégories</option>
+        <option value="electronics">Électronique</option>
+        <option value="clothing">Vêtements</option>
+        <option value="home">Maison</option>
+      </select>
+      <select id="shop-filter">
+        <option value="">Toutes les boutiques</option>
+      </select>
+    </section>
+    <section id="product-list" class="product-grid"></section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
