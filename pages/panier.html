@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Marketplace</h1>
+      <div class="nav-links">
+        <a href="../index.html">Accueil</a>
+        <a href="boutique.html">Ma Boutique</a>
+        <a href="panier.html">Panier</a>
+        <a href="profil.html">Profil</a>
+        <button id="logout-btn" style="display: none;">Déconnexion</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="cart">
+      <h2>Votre Panier</h2>
+      <div id="cart-items"></div>
+      <p>Total: <span id="cart-total">0</span> €</p>
+      <p>Commission (5%): <span id="cart-commission">0</span> €</p>
+      <button id="checkout-btn">Payer</button>
+    </section>
+  </main>
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
